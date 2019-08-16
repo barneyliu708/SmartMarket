@@ -1,0 +1,5 @@
+﻿<h1>{{name}}</h1>
+<div *ngFor="let sp of stockprices">
+    <stock-price-details [stockPriceDetails]="sp"></stock-price-details>
+</div>
+<button (click)="onBackToHome()">Back to Home</button>
