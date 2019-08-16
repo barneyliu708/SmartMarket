@@ -17,26 +17,26 @@ var layout_component_1 = require("./components/shared/layout/layout.component");
 var home_component_1 = require("./components/home/home.component");
 var dashboard_component_1 = require("./components/dashboard/dashboard.component");
 var stock_price_details_component_1 = require("./components/shared/stock-price-details/stock-price-details.component");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                platform_browser_1.BrowserModule,
+                http_1.HttpModule,
+                app_routing_module_1.AppRoutingModule
+            ],
+            declarations: [
+                layout_component_1.LayoutComponent,
+                home_component_1.HomeComponent,
+                dashboard_component_1.DashboardComponent,
+                stock_price_details_component_1.StockPriceDetailsComponent
+            ],
+            bootstrap: [layout_component_1.LayoutComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            platform_browser_1.BrowserModule,
-            http_1.HttpModule,
-            app_routing_module_1.AppRoutingModule
-        ],
-        declarations: [
-            layout_component_1.LayoutComponent,
-            home_component_1.HomeComponent,
-            dashboard_component_1.DashboardComponent,
-            stock_price_details_component_1.StockPriceDetailsComponent
-        ],
-        bootstrap: [layout_component_1.LayoutComponent]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

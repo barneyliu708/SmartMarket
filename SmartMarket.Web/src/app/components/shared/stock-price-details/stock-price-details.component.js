@@ -10,20 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var StockPriceDetailsComponent = (function () {
+var StockPriceDetailsComponent = /** @class */ (function () {
     function StockPriceDetailsComponent() {
     }
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", Object)
+    ], StockPriceDetailsComponent.prototype, "stockPriceDetails", void 0);
+    StockPriceDetailsComponent = __decorate([
+        core_1.Component({
+            selector: 'stock-price-details',
+            templateUrl: './stock-price-details.component.html'
+        })
+    ], StockPriceDetailsComponent);
     return StockPriceDetailsComponent;
 }());
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Object)
-], StockPriceDetailsComponent.prototype, "stockPriceDetails", void 0);
-StockPriceDetailsComponent = __decorate([
-    core_1.Component({
-        selector: 'stock-price-details',
-        templateUrl: './stock-price-details.component.html'
-    })
-], StockPriceDetailsComponent);
 exports.StockPriceDetailsComponent = StockPriceDetailsComponent;
 //# sourceMappingURL=stock-price-details.component.js.map

@@ -7,19 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var HomeComponent = (function () {
+var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
         this.title = 'Welcome Home Page!';
     }
     HomeComponent.prototype.ngOnInit = function () { };
+    HomeComponent = __decorate([
+        core_1.Component({
+            selector: 'app-home',
+            templateUrl: './home.component.html',
+            providers: []
+        })
+    ], HomeComponent);
     return HomeComponent;
 }());
-HomeComponent = __decorate([
-    core_1.Component({
-        selector: 'app-home',
-        templateUrl: './home.component.html',
-        providers: []
-    })
-], HomeComponent);
 exports.HomeComponent = HomeComponent;
 //# sourceMappingURL=home.component.js.map

@@ -13,7 +13,7 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/do");
-var StockPriceService = (function () {
+var StockPriceService = /** @class */ (function () {
     function StockPriceService(http) {
         this._stockurl = 'app/stock-prices.json';
         this._http = http;
@@ -23,11 +23,11 @@ var StockPriceService = (function () {
             .map(function (response) { return response.json(); })
             .do(function (data) { return console.log(JSON.stringify(data)); });
     };
+    StockPriceService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], StockPriceService);
     return StockPriceService;
 }());
-StockPriceService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], StockPriceService);
 exports.StockPriceService = StockPriceService;
 //# sourceMappingURL=stock-price.service.js.map

@@ -24,21 +24,21 @@ var routes = [
         redirectTo: 'home'
     }
 ];
-var AppRoutingModule = (function () {
+var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
     }
+    AppRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                router_1.RouterModule.forRoot(routes, { useHash: true, preloadingStrategy: router_1.PreloadAllModules })
+            ],
+            exports: [
+                router_1.RouterModule
+            ],
+            declarations: []
+        })
+    ], AppRoutingModule);
     return AppRoutingModule;
 }());
-AppRoutingModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            router_1.RouterModule.forRoot(routes, { useHash: true, preloadingStrategy: router_1.PreloadAllModules })
-        ],
-        exports: [
-            router_1.RouterModule
-        ],
-        declarations: []
-    })
-], AppRoutingModule);
 exports.AppRoutingModule = AppRoutingModule;
 //# sourceMappingURL=app-routing.module.js.map

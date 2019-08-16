@@ -13,7 +13,7 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 require("rxjs/add/operator/map");
 var stock_price_service_1 = require("../../stock-price/stock-price.service");
-var DashboardComponent = (function () {
+var DashboardComponent = /** @class */ (function () {
     function DashboardComponent(stockService, router) {
         this._stockService = stockService;
         this._router = router;
@@ -26,15 +26,15 @@ var DashboardComponent = (function () {
     DashboardComponent.prototype.onBackToHome = function () {
         this._router.navigate(['/home']);
     };
+    DashboardComponent = __decorate([
+        core_1.Component({
+            selector: 'app-dashboard',
+            templateUrl: './dashboard.component.html',
+            providers: [stock_price_service_1.StockPriceService]
+        }),
+        __metadata("design:paramtypes", [stock_price_service_1.StockPriceService, router_1.Router])
+    ], DashboardComponent);
     return DashboardComponent;
 }());
-DashboardComponent = __decorate([
-    core_1.Component({
-        selector: 'app-dashboard',
-        templateUrl: './dashboard.component.html',
-        providers: [stock_price_service_1.StockPriceService]
-    }),
-    __metadata("design:paramtypes", [stock_price_service_1.StockPriceService, router_1.Router])
-], DashboardComponent);
 exports.DashboardComponent = DashboardComponent;
 //# sourceMappingURL=dashboard.component.js.map
